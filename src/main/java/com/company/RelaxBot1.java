@@ -35,8 +35,6 @@ public class RelaxBot1 extends TelegramLongPollingBot {
             Message message = update.getMessage();
             Long chatId = message.getChatId();
 
-            List<PhotoSize> photo = message.getPhoto();
-
             if (message.hasText()) {
 
                 String text = message.getText();

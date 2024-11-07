@@ -54,7 +54,6 @@ public class RelaxBot3Admin extends TelegramLongPollingBot {
 
     private void sendMessage(String text, Long chatId) {
 
-
         SendMessage sendMessage = SendMessage.builder()
                 .text(text)
                 .chatId(chatId)

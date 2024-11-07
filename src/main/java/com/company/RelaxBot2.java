@@ -6,6 +6,7 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.Message;
+import org.telegram.telegrambots.meta.api.objects.PhotoSize;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
@@ -25,6 +26,7 @@ public class RelaxBot2 extends TelegramLongPollingBot {
     public String getBotUsername() {
         return "https://t.me/RelaxMe1bot";
     }
+
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -72,7 +74,7 @@ public class RelaxBot2 extends TelegramLongPollingBot {
                 .photo(new InputFile(Components.PHOTO_FIELD_1))
                 .chatId(chatId)
                 .protectContent(true)
-                .caption(Components.PRICE_3 + Components.PHONE_1)
+                .caption(Components.PRICE_3 + Components.PHONE_2)
                 .build();
 
         try {
@@ -86,6 +88,7 @@ public class RelaxBot2 extends TelegramLongPollingBot {
     private void sendMessage(String text, Long chatId) {
 
         text += Components.PHONE_1;
+
 
         SendMessage sendMessage = SendMessage.builder()
                 .text(text)
