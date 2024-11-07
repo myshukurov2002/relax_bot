@@ -13,15 +13,15 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RelaxBot extends TelegramLongPollingBot {
+public class RelaxBot2 extends TelegramLongPollingBot {
 
-    public RelaxBot() {
-        super("7841377123:AAG8ihKnn3GtBWrxKWmBzD4CTKgeT0ZuGkY");
+    public RelaxBot2() {
+        super("7872365254:AAFXhQ0IL0PXOgWcxHbOPOrRPILUrR_7X70");
     }
 
     @Override
     public String getBotUsername() {
-        return "https://t.me/RelaxMeBot";
+        return "https://t.me/RelaxMe1bot";
     }
 
     @Override
