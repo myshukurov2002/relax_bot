@@ -25,6 +25,7 @@ public interface Components {
     String PHONE_2 = "\n\n☎\uFE0F Telefon Raqam: +998981015702";
 
     String PHOTO_FIELD_1 = "AgACAgIAAxkBAANEZyx2PaRzIX6AMnhX5m8ofPeoW50AAjjgMRtjemhJyJWmKP9MCDcBAAMCAAN5AAM2BA";
+    String PHOTO_FIELD_2 = "AgACAgIAAxkBAAMzZyypCQSDviFKdiPWmOI-vOi5DuUAAqruMRv6M2FJulRa0QNs9XYBAAMCAAN5AAM2BA";
     String WILL_CONTACT = "Hurmatli Mijoz! Reklama kanallardan bizni tanlaganingizdan mamnunmiz\uD83D\uDE0A\n" +
             "Sizga Tez orada Kanal Admini javob beradi kutib qoling…";
 }

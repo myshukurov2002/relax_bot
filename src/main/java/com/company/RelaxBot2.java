@@ -6,7 +6,6 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.Message;
-import org.telegram.telegrambots.meta.api.objects.PhotoSize;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
@@ -30,6 +29,7 @@ public class RelaxBot2 extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
+
         if (update.hasMessage()) {
 
             Message message = update.getMessage();
@@ -71,7 +71,7 @@ public class RelaxBot2 extends TelegramLongPollingBot {
     private void sendPrices(Long chatId) {
 
         SendPhoto sendPhoto = SendPhoto.builder()
-                .photo(new InputFile(Components.PHOTO_FIELD_1))
+                .photo(new InputFile(Components.PHOTO_FIELD_2))
                 .chatId(chatId)
                 .protectContent(true)
                 .caption(Components.PRICE_3 + Components.PHONE_2)

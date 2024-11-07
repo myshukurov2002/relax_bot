@@ -9,15 +9,15 @@ public class Main {
 
         TelegramBotsApi telegramBotsApi1 = new TelegramBotsApi(DefaultBotSession.class);
         telegramBotsApi1.registerBot(new RelaxBot1());
-        System.out.println(RelaxBot1.class.getName() + "running ...");
+        System.out.println(RelaxBot1.class.getName() + " running ...");
 
 
         TelegramBotsApi telegramBotsApi2 = new TelegramBotsApi(DefaultBotSession.class);
         telegramBotsApi2.registerBot(new RelaxBot2());
-        System.out.println(RelaxBot1.class.getName() + "running ...");
+        System.out.println(RelaxBot2.class.getName() + " running ...");
 
         TelegramBotsApi telegramBotsApi3 = new TelegramBotsApi(DefaultBotSession.class);
         telegramBotsApi3.registerBot(new RelaxBot3Admin());
-        System.out.println(RelaxBot1.class.getName() + "running ...");
+        System.out.println(RelaxBot3Admin.class.getName() + " running ...");
     }
 }
