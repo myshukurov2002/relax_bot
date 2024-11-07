@@ -3,6 +3,8 @@ package com.company;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendLocation;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
+import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
@@ -66,7 +68,19 @@ public class RelaxBot2 extends TelegramLongPollingBot {
 
     private void sendPrices(Long chatId) {
 
-        sendMessage(Components.PRICE_3, chatId);
+        SendPhoto sendPhoto = SendPhoto.builder()
+                .photo(new InputFile(Components.PHOTO_FIELD_1))
+                .chatId(chatId)
+                .protectContent(true)
+                .caption(Components.PRICE_3 + Components.PHONE_1)
+                .build();
+
+        try {
+            execute(sendPhoto);
+
+        } catch (TelegramApiException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void sendMessage(String text, Long chatId) {
