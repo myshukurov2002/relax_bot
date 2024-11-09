@@ -18,12 +18,12 @@ import java.util.List;
 public class RelaxBot2 extends TelegramLongPollingBot {
 
     public RelaxBot2() {
-        super("7872365254:AAFXhQ0IL0PXOgWcxHbOPOrRPILUrR_7X70");
+        super("8165332169:AAHeqmc0gC3akNeLv6Y8mlBPoQRqbJwWpNo");
     }
 
     @Override
     public String getBotUsername() {
-        return "https://t.me/RelaxMe1bot";
+        return "https://t.me/RelaxMe2bot";
     }
 
 
@@ -34,7 +34,6 @@ public class RelaxBot2 extends TelegramLongPollingBot {
 
             Message message = update.getMessage();
             Long chatId = message.getChatId();
-
             if (message.hasText()) {
 
                 String text = message.getText();

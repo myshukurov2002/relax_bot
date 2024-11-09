@@ -16,12 +16,12 @@ import java.util.List;
 public class RelaxBot3Admin extends TelegramLongPollingBot {
 
     public RelaxBot3Admin() {
-        super("7201395942:AAHpg2eYvZ7RiyCBP2zqAyL1wiuAeNA8nfE");
+        super("7996754626:AAGJ4JRkjajdbCHwSdrQ9CtKGG504C-zSwg");
     }
 
     @Override
     public String getBotUsername() {
-        return "https://t.me/orchid_admin_bot";
+        return "https://t.me/OrhideyaHotelSpaAdminbot";
     }
 
     @Override

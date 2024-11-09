@@ -6,26 +6,24 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.Message;
-import org.telegram.telegrambots.meta.api.objects.PhotoSize;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 public class RelaxBot1 extends TelegramLongPollingBot {
 
     public RelaxBot1() {
-        super("7841377123:AAG8ihKnn3GtBWrxKWmBzD4CTKgeT0ZuGkY");
+        super("7884775793:AAHtBvkAz4Mz2yTiIVxwNQFSdSVtPP0BpD0");
     }
 
     @Override
     public String getBotUsername() {
-        return "https://t.me/RelaxMeBot";
+        return "https://t.me/OrhideyaHotelSpa1bot";
     }
 
     @Override
@@ -34,7 +32,6 @@ public class RelaxBot1 extends TelegramLongPollingBot {
 
             Message message = update.getMessage();
             Long chatId = message.getChatId();
-
             if (message.hasText()) {
 
                 String text = message.getText();
