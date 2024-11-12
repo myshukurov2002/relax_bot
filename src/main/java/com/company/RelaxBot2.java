@@ -45,7 +45,6 @@ public class RelaxBot2 extends TelegramLongPollingBot {
                     default -> sendMessage(Components.ERROR, chatId);
                 }
             }
-
         }
     }
 

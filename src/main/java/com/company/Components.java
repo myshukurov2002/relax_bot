@@ -16,7 +16,6 @@ public interface Components {
     String PRICE_1 = "\uD83D\uDCB0 450 mingdan 3 million so'mgacha";
     String PRICE_2 = "\uD83D\uDCB0 500 mingdan 1 million 300 ming so'mgacha";
     String PRICE_3 = "\uD83E\uDDD1\uD83C\uDFFB\u200D\uD83D\uDCBC Xizmatlar:\n\n\uD83D\uDCB0 450 mingdan 3 million so'mgacha";
-//    String PRICE_3 = "\uD83E\uDDD1\uD83C\uDFFB\u200D\uD83D\uDCBC Xizmatlar:\n\n\uD83D\uDCB0 450 mingdan 3 million so'mgacha\n\uD83D\uDCB0 500 mingdan 1 million 300 ming so'mgacha";
 
     Double longitude = 69.257473;
     Double latitude = 41.287429;
